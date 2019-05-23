@@ -8,15 +8,21 @@ using namespace std;
 
 class Graph
 {
+
 public:
 
 	//---------------------------------
 	// Variables
-	List <CVertex> vertices;
+	Hashmap<long, Vertex> vertices;
 
+	int numVertices;
 
 	//---------------------------------
 	// Methods
+
+	void addVertex(Vertex v);
+	virtual void removeVertex(Vertex v);
+
 
 
 	// Returns a MetaGraph object
@@ -28,6 +34,9 @@ public:
 	// Prints information
 	// eg numVertices, numEdges
 	virtual void print();
+
+	Graph();
+	~Graph();
 
 
 }
