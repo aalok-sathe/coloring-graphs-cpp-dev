@@ -1,6 +1,5 @@
 #include <iostream> 
-#include <list> 
-#include <iterator>
+#include <map>
 using namespace std;
 
 #ifndef __GRAPH_H__
@@ -13,7 +12,7 @@ public:
 
 	//---------------------------------
 	// Variables
-	Hashmap<long, Vertex> vertices;
+	map<long, Vertex> vertices;
 
 	int numVertices;
 
